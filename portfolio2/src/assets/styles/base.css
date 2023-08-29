@@ -4,6 +4,10 @@
   font-family: "kuga";
   src: url(../../assets/fonts/kuga.otf);
 }
+@font-face {
+  font-family: "Neue-reg";
+  src: url(../../assets/fonts/NeueMachina-Regular.otf);
+}
 
 :root {
   --color-white: #ffffff;
@@ -15,4 +19,11 @@
 
 a{
   text-decoration: none;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
