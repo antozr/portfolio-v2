@@ -39,7 +39,7 @@ function showMenu(){
 
 <style scoped lang="scss">
 .head {
-  width: calc(100vw - (6vw + 2px ));
+  width:100vw;
   height: 60px;
   background-color: #fff;
   position: fixed;

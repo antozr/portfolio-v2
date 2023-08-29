@@ -13,7 +13,7 @@
 <style scoped lang="scss">
 .sect{
     &__titleBBox{
-        width: 100vw;
+        width: 100%;
         height: 80vh;
         border-radius: 50px 50px 0px 0px;
         background: #1D1D1D;
