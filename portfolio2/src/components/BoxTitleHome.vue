@@ -1,5 +1,10 @@
 <script setup>
 import IconArrowMul1Vue from './icons/IconArrowMul1.vue';
+
+const props = defineProps({
+    title1 : String,
+    title2 : String
+})
 </script>
 
 <template>
@@ -14,7 +19,7 @@ import IconArrowMul1Vue from './icons/IconArrowMul1.vue';
         </div>
         <div class="titleBBox__titleB">
             <h2 class="sect__title sect__title--big sect__title--white">
-                Antoni aka
+                {{ title1 }}
             </h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="82" height="85" viewBox="0 0 82 85" fill="none"
                 class="titleBBox__svgD1">
@@ -25,7 +30,7 @@ import IconArrowMul1Vue from './icons/IconArrowMul1.vue';
                     stroke-width="4" />
             </svg>
             <h3 class="sect__title sect__title--kuga sect__title--3 sect__title--white" style="opacity: 0.8;">
-                anto__dev
+                {{ title2 }}
             </h3>
         </div>
         <IconArrowMul1Vue class="titleBBox__svgD2" />
@@ -93,7 +98,7 @@ import IconArrowMul1Vue from './icons/IconArrowMul1.vue';
 
     .sect {
         &__titleBBox {
-            width: 90%;
+            width: 83%;
             height: 75vh;
             padding: 3vh 2vw;
 
@@ -115,7 +120,8 @@ import IconArrowMul1Vue from './icons/IconArrowMul1.vue';
             position: absolute;
             right: auto;
             left: 1vw;
-            top: 22vh;
+            top: auto;
+            bottom: 10%;
             transform: rotateY(180deg) scale(1.2);
         }
 

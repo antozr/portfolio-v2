@@ -4,6 +4,7 @@ import BoxTitleHome from '../components/BoxTitleHome.vue';
 
 <template>
   <main>
-    <BoxTitleHome  />
+
+    <BoxTitleHome :title1="'Antoni aka'" :title2="'anto__dev'" />
   </main>
 </template>
