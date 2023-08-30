@@ -19,3 +19,16 @@ color: #000;
     }
   }
 }
+
+@media(min-width:900px){
+
+  .sect{
+
+    &__title{
+      font-size: 13dvw;
+      &--3{
+        font-size: 9dvw;
+    }
+    }
+  }
+}

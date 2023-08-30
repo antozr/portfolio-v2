@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
-import BoxBigTitle from './components/BoxTitleHome.vue'
+
 function showMenu(){
   console.log('hellop');
 }
@@ -33,7 +33,7 @@ function showMenu(){
   </header>
 
   <RouterView />
-<BoxBigTitle />
+
 
 </template>
 

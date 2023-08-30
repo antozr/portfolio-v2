@@ -1,5 +1,5 @@
 <script setup>
-
+import IconArrowMul1Vue from './icons/IconArrowMul1.vue';
 </script>
 
 <template>
@@ -16,7 +16,8 @@
             <h2 class="sect__title sect__title--big sect__title--white">
                 Antoni aka
             </h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="85" viewBox="0 0 82 85" fill="none" class="titleBBox__svgD1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="85" viewBox="0 0 82 85" fill="none"
+                class="titleBBox__svgD1">
                 <path
                     d="M24.4797 32.9981C25.3488 32.3162 26.606 32.468 27.2878 33.337C27.9696 34.206 27.8179 35.4632 26.9489 36.145L24.4797 32.9981ZM4.32904 51.3508L3.32745 53.0819L0.769173 51.6017L3.09447 49.7773L4.32904 51.3508ZM52.322 77.4842C52.6069 78.5514 51.9727 79.6475 50.9055 79.9324L33.5146 84.5753C32.4474 84.8602 31.3513 84.226 31.0664 83.1588C30.7815 82.0916 31.4157 80.9955 32.4829 80.7106L47.9415 76.5836L43.8145 61.1251C43.5296 60.0579 44.1638 58.9618 45.231 58.6769C46.2981 58.3919 47.3942 59.0261 47.6791 60.0933L52.322 77.4842ZM26.9489 36.145L5.56361 52.9242L3.09447 49.7773L24.4797 32.9981L26.9489 36.145ZM5.33062 49.6196L51.3912 76.269L49.3881 79.7312L3.32745 53.0819L5.33062 49.6196Z"
                     fill="white" />
@@ -27,6 +28,7 @@
                 anto__dev
             </h3>
         </div>
+        <IconArrowMul1Vue class="titleBBox__svgD2" />
     </div>
 </template>
 
@@ -39,7 +41,7 @@
         background: #1D1D1D;
         padding: 3vh 5vw;
         background: url(../assets/images/texture1.jpg), lightgray 50% / cover no-repeat, url(../assets/images/texture2.jpg), lightgray 50% / cover no-repeat, #1D1D1D;
-position: relative;
+        position: relative;
     }
 
 
@@ -62,18 +64,73 @@ position: relative;
         height: 50.781px;
         transform: translateX(7vw) translateY(-2vh);
     }
-    &__svgD1{
+
+    &__svgD1 {
         position: absolute;
         right: 15px;
         top: 9vh;
     }
 
-    &__titleB{
+    &__svgD2 {
+        position: absolute;
+        left: 15px;
+        top: 50vh;
+        scale: 0.8;
+        transform: rotateY(180deg);
+    }
+
+    &__titleB {
 
         transform: translateY(-7vh);
         margin: 0 0 0 8px;
         display: flex;
         flex-direction: column;
         row-gap: 8vh;
+    }
+}
+
+@media(min-width: 900px) {
+
+    .sect {
+        &__titleBBox {
+            width: 90%;
+            height: 75vh;
+            padding: 3vh 2vw;
+
+            
+        }
+    }
+
+    .titleBBox {
+        &__decorBox {
+            width: 98%;
+            height: 40vh;
+        }
+
+        &__svg1 {
+            transform: translateX(2vw) translateY(-1vh);
+        }
+
+        &__svgD1 {
+            position: absolute;
+            right: auto;
+            left: 1vw;
+            top: 22vh;
+            transform: rotateY(180deg) scale(1.2);
+        }
+
+        &__svgD2 {
+display: none;
+
+        }
+
+        &__titleB {
+
+            transform: translateY(-22vh);
+            row-gap: 3vh;
+            &>h3{
+                transform: translateX(10vw);
+            }
+        }
     }
 }</style>

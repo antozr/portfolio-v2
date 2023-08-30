@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import BoxTitleHome from '../components/BoxTitleHome.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <BoxTitleHome  />
   </main>
 </template>
