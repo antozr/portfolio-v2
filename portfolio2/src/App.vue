@@ -8,6 +8,20 @@ function showMenu(){
 </script>
 
 <template>
+  <div class="rowGrid">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
   <header class="head">
     <div class="head__logoBox">
       <RouterLink to="/" class="head__logo">
@@ -79,5 +93,26 @@ background: transparent;
 border: none;
   }
 
+}
+
+.rowGrid{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  column-gap: 28px;
+  padding: 0 28px;
+  pointer-events: none;
+
+  &>div{
+    background: red;
+    opacity: 0.5;
+    height: 100%;
+    width: calc((100% / 12) - 14px);
+  }
 }
 </style>
