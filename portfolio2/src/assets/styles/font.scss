@@ -1,34 +1,39 @@
 .sect {
   &__title {
     font-family: 'Neue-reg';
-    
+
     font-size: 18vw;
     font-weight: 400;
     line-height: 90%;
-color: #000;
+    color: #000;
 
+    &--white {
+      color: #fff;
+    }
+    &--kuga {
+      font-family: 'kuga';
+    }
+    &--3 {
+      font-size: 13vw;
+    }
+  }
 
-    &--white{
-        color: #fff;
-    }
-    &--kuga{
-        font-family: "kuga";
-    }
-    &--3{
-        font-size: 13vw;
-    }
+  &__txt {
+    color: #000;
+    font-family: 'Neue-reg';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
   }
 }
 
-@media(min-width:900px){
-
-  .sect{
-
-    &__title{
+@media (min-width: 900px) {
+  .sect {
+    &__title {
       font-size: 13dvw;
-      &--3{
+      &--3 {
         font-size: 9dvw;
-    }
+      }
     }
   }
 }

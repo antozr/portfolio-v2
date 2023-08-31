@@ -17,10 +17,7 @@ function showMenu(){
     <div class="col"></div>
     <div class="col"></div>
     <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
+    
   </div>
   <header class="head">
     <div class="head__logoBox">
@@ -104,15 +101,26 @@ border: none;
   z-index: 100;
   display: flex;
   flex-direction: row;
-  column-gap: 28px;
-  padding: 0 28px;
+  column-gap: 21px;
+  padding: 0 21px;
   pointer-events: none;
 
   &>div{
     background: red;
     opacity: 0.5;
     height: 100%;
+    width: calc((100% / 8) - 11px);
+  }
+}
+@media(min-width:900px){
+  .rowGrid{
+
+  column-gap: 28px;
+  padding: 0 28px;
+
+  &>div{
     width: calc((100% / 12) - 14px);
   }
+}
 }
 </style>
