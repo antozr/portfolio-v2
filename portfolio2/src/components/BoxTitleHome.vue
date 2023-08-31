@@ -98,7 +98,7 @@ const props = defineProps({
 
     .sect {
         &__titleBBox {
-            width: 83%;
+            width: 100%;
             height: 75vh;
             padding: 3vh 2vw;
 

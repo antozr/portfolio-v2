@@ -11,7 +11,7 @@ import BoxTitleHome from '../components/BoxTitleHome.vue';
             Hey!
           </h2>
           <p class="sect__txt">
-            Bienvenus ici. <br />
+            Bienvenus ici 👋. <br />
             Moi c’est Antoni, <b>un designer / Front-end dev junior</b>, qui touche à tous, pour faire des expériences
             uniques et agréables.
           </p>
@@ -21,8 +21,9 @@ import BoxTitleHome from '../components/BoxTitleHome.vue';
           </p>
 
         </div>
+        <BoxTitleHome :title1="'Antoni aka'" :title2="'anto__dev'" />
       </div>
-      <BoxTitleHome :title1="'Antoni aka'" :title2="'anto__dev'" />
+     
     </div>
 
 
