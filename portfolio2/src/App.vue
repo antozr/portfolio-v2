@@ -17,10 +17,7 @@ function showMenu(){
     <div class="col"></div>
     <div class="col"></div>
     <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
+
     
   </div>
   <header class="head">
@@ -99,7 +96,7 @@ border: none;
 .rowGrid{
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;

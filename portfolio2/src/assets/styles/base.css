@@ -8,6 +8,10 @@
   font-family: "Neue-reg";
   src: url(../../assets/fonts/NeueMachina-Regular.otf);
 }
+@font-face {
+  font-family: "Neue-ut";
+  src: url(../../assets/fonts/NeueMachina-Ultrabold.otf);
+}
 
 :root {
   --color-white: #ffffff;

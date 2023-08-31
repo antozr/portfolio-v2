@@ -1,53 +1,106 @@
+.hoeroBan {
+  &__firstB {
+    height: auto;
+    width: 100%;
+    margin: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+    position: relative;
 
-
-.hoeroBan{
-
-    &__firstB{
-        height: auto;
+    &::after{
+        content: " ";
         width: 100%;
-        margin: 60px 0 0 0;
-        display: flex;
-        flex-direction: column;
-        row-gap: 38px;
-    
-    }
-
-    &__textBox1{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 2vw;
-        row-gap: 18px;
-        align-items: flex-end;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px;
+        background: #F9F5E7;
+        bottom: -145px;
+        left: 0;
+        position: absolute;
+        z-index: 1;
 
         
     }
+  }
+
+  &__textBox1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+    row-gap: 18px;
+    align-items: flex-end;
+  }
+
+  &__secondB {
+    border-radius: 36px 36px 0px 0px;
+    background: #ffdba1;
+    width: 90%;
+    height: 43vh;
+    margin: 0 0 0 10%;
+    padding: 1.5vh 3.5vw;
+    position: relative;
+    z-index: 2;
+    transform: translateY(-17vh);
+    display: flex;
+    flex-direction: column;
+   //align-items: center;
+  }
+
+
+  &__listTxt1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 21px;
+    row-gap: 32px;
+    justify-content: space-between;
+    margin: 20% 0 0 0;
+
+  }
+  &__boxDec1{
+    height: 60px;
+    width: 90%;
+    border-radius: 0px 0px 2px 15px;
+border-bottom: 2px solid #FFF;
+border-left: 2px solid #FFF;
+display: flex;
+justify-content: flex-end;
+margin: 16px 0 0 0;
+
+&>svg{
+    position: relative;
+    transform: translateX(5vw) translateY(5vh);
+}
+  }
+  &__boxDec2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-
-
-@media(min-width:900px){
-    .hoeroBan{
-
-        &__firstB{
-            width: 83%;
-            margin: 120px 0 0 0;
-            display: flex;
-            flex-direction: column;
-            row-gap: 28px;
-        
-        }
-    
-        &__textBox1{
-            &>h2{
-                font-size: 6vw;
-                margin: 0 0 28px;
-            }
-            &>p{
-                max-width: 40ch;
-            }
-        }
+@media (min-width: 900px) {
+  .hoeroBan {
+    &__firstB {
+      width: 83%;
+      margin: 120px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      row-gap: 28px;
     }
+
+    &__textBox1 {
+      & > h2 {
+        font-size: 6vw;
+        margin: 0 0 28px;
+      }
+      & > p {
+        max-width: 40ch;
+      }
+    }
+  }
 }

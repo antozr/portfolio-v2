@@ -1,5 +1,7 @@
 <script setup>
 import BoxTitleHome from '../components/BoxTitleHome.vue';
+import IconStarWhite1 from '../components/icons/IconStarWhite1.vue';
+import IconRoundStar from '../components/icons/IconRoundStar1.vue';
 </script>
 
 <template>
@@ -23,12 +25,60 @@ import BoxTitleHome from '../components/BoxTitleHome.vue';
         </div>
         <BoxTitleHome :title1="'Antoni aka'" :title2="'anto__dev'" />
       </div>
-     
+
+      <div class="hoeroBan__secondB">
+        <div class="hoeroBan__boxDec2">
+          <IconStarWhite1 />
+        </div>
+        <ul class="hoeroBan__listTxt1">
+          <li class="hoeroBan__elTxt1">
+            <h3 class="sect__txt sect__title sect__txt--bigW">
+              Designer
+            </h3>
+            <p class="sect__txt">
+              UX / UI design<br />
+              Responsive/ mobile<br />
+              Web-designer
+            </p>
+
+
+          </li>
+          <li class="hoeroBan__elTxt1">
+            <h3 class="sect__txt sect__title sect__txt--bigW">
+              Develloper
+            </h3>
+            <p class="sect__txt">
+              Front-end<br />
+              Web-app
+
+            </p>
+
+
+          </li>
+        </ul>
+
+        <div class="hoeroBan__boxDec1">
+          <IconRoundStar />
+        </div>
+      </div>
+
     </div>
 
 
   </main>
 </template>
 
-<style lang="scss" scoped></style>>
+<style lang="scss" scoped>
+.sect {
+
+  &__hoeroBan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 21px;
+
+  }
+
+}
+</style>>
 
