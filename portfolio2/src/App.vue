@@ -17,6 +17,10 @@ function showMenu(){
     <div class="col"></div>
     <div class="col"></div>
     <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
 
     
   </div>
@@ -108,7 +112,7 @@ border: none;
 
   &>div{
     background: red;
-    opacity: 0.5;
+    opacity: 0.2;
     height: 100%;
     width: calc((100% / 8) - 11px);
   }

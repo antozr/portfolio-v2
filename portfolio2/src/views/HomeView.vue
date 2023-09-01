@@ -32,7 +32,7 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
         </div>
         <ul class="hoeroBan__listTxt1">
           <li class="hoeroBan__elTxt1">
-            <h3 class="sect__txt sect__title sect__txt--bigW">
+            <h3 class="sect__txt sect__title sect__title--smallF sect__txt--bigW">
               Designer
             </h3>
             <p class="sect__txt">
@@ -44,7 +44,7 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
 
           </li>
           <li class="hoeroBan__elTxt1">
-            <h3 class="sect__txt sect__title sect__txt--bigW">
+            <h3 class="sect__txt sect__title sect__title--smallF sect__txt--bigW">
               Develloper
             </h3>
             <p class="sect__txt">
