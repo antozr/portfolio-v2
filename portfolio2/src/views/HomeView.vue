@@ -63,6 +63,10 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
         </div>
       </div>
 
+      <div id="projets">
+        jesuis projet
+      </div>
+
     </div>
 
 
