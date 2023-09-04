@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import IconMail1 from './components/icons/IconMail1.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 
 function showMenu(){
@@ -45,6 +46,10 @@ function showMenu(){
         <rect x="32" y="10" width="12" height="4" rx="2" fill="#933FFF" />
         <rect y="20" width="44" height="4" rx="2" fill="#933FFF" />
       </svg>
+    </button>
+    <button class="head__btnMail">
+      Contact-moi
+      <IconMail1 />
     </button>
   </header>
 
@@ -112,7 +117,7 @@ border: none;
 
   &>div{
     background: red;
-    opacity: 0.2;
+    opacity: 0.0;
     height: 100%;
     width: calc((100% / 8) - 11px);
   }
@@ -126,6 +131,28 @@ border: none;
   &>div{
     width: calc((100% / 12) - 14px);
   }
+
+
+
+  
 }
+
+.head{
+  bottom: auto;
+  left: 0;
+  top: 0;
+  width: calc(100% - 6vw);
+  margin: 0 0 0 3vw;
+  z-index: 30;
+  padding: 9px 3vw;
+  border: none;
+  border-bottom: 2px solid #1d1d1d;
+
+
+  &__btn {
+display: none;
+  }
+}
+
 }
 </style>

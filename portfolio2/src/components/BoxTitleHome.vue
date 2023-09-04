@@ -101,12 +101,14 @@ const props = defineProps({
             width: 100%;
             height: 75vh;
             padding: 3vh 2vw;
+            overflow: hidden;
 
             
         }
     }
 
     .titleBBox {
+
         &__decorBox {
             width: 98%;
             height: 40vh;
@@ -131,7 +133,10 @@ display: none;
         }
 
         &__titleB {
-
+//             border: 2px solid yellow;
+// &>h2,h3{
+//     border: 2px solid green;
+// }
             transform: translateY(-22vh);
             row-gap: 3vh;
             &>h3{

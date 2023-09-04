@@ -5,7 +5,8 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
 </script>
 
 <template>
-  <main>
+  
+  
     <div class="sect__hoeroBan">
       <div class="hoeroBan__firstB">
         <div class="hoeroBan__textBox1">
@@ -65,10 +66,12 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
     </div>
 
 
-  </main>
+  
 </template>
 
 <style lang="scss" scoped>
+
+
 .sect {
 
   &__hoeroBan {
@@ -76,9 +79,23 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 21px;
+    border: 2px solid red;
+    width: 100%;
+  // background: blue;
 
   }
 
 }
-</style>>
+@media(min-width:900px){
+  .sect {
+
+&__hoeroBan {
+
+  flex-wrap: nowrap;
+
+}
+
+}
+}
+</style>
 
