@@ -2,11 +2,12 @@
 import BoxTitleHome from '../components/BoxTitleHome.vue';
 import IconStarWhite1 from '../components/icons/IconStarWhite1.vue';
 import IconRoundStar from '../components/icons/IconRoundStar1.vue';
+import IconBoxStar from '../components/icons/IconBoxStar.vue';
+import InterBoxTitleVue from '../components/InterBoxTitleVue.vue';
 </script>
 
 <template>
-  
-  
+  <main>
     <div class="sect__hoeroBan">
       <div class="hoeroBan__firstB">
         <div class="hoeroBan__textBox1">
@@ -69,13 +70,11 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
 
     </div>
 
-
-  
+    <InterBoxTitleVue />
+  </main>
 </template>
 
 <style lang="scss" scoped>
-
-
 .sect {
 
   &__hoeroBan {
@@ -85,21 +84,22 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
     column-gap: 21px;
     border: 2px solid red;
     width: 100%;
-  // background: blue;
+    // background: blue;
 
   }
 
 }
-@media(min-width:900px){
+
+@media(min-width:900px) {
   .sect {
 
-&__hoeroBan {
+    &__hoeroBan {
 
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
 
-}
+    }
 
-}
+  }
 }
 </style>
 

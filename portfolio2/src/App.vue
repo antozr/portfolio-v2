@@ -36,7 +36,7 @@ function showMenu() {
 
 
     <nav class="head__nav">
-      <RouterLink to="/" class="head__link">Home</RouterLink>
+      <RouterLink to="/" class="head__link head__link--actif">Home</RouterLink>
       <RouterLink to="/projets" class="head__link">About</RouterLink>
       <a href="#projets" class="head__link">Mon&nbsp;travail</a>
       <a href="#+infos" class="head__link">+&nbsp;D'infos</a>
@@ -105,6 +105,14 @@ function showMenu() {
     display:
       none;
   }
+  &__link{
+
+    &--actif{
+      color: var(--mauve, #9D77BF);
+      
+      font-family: "Neue-ut";
+    }
+  }
 
 }
 
@@ -123,7 +131,7 @@ function showMenu() {
 
   &>div {
     background: red;
-    opacity: 0.0;
+    opacity: 0.3;
     height: 100%;
     width: calc((100% / 8) - 11px);
   }
@@ -217,6 +225,11 @@ function showMenu() {
           font-weight: 800;
           
         }
+        &--actif{
+      color:  #9D77BF;
+      
+      font-family: "Neue-ut";
+    }
       }
   }
 
