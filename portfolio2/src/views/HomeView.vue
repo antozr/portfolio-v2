@@ -4,6 +4,7 @@ import IconStarWhite1 from '../components/icons/IconStarWhite1.vue';
 import IconRoundStar from '../components/icons/IconRoundStar1.vue';
 import IconBoxStar from '../components/icons/IconBoxStar.vue';
 import InterBoxTitleVue from '../components/InterBoxTitleVue.vue';
+import SmallColInfoVue from '../components/SmallColInfo.vue';
 </script>
 
 <template>
@@ -32,45 +33,20 @@ import InterBoxTitleVue from '../components/InterBoxTitleVue.vue';
         <div class="hoeroBan__boxDec2">
           <IconStarWhite1 />
         </div>
-        <ul class="hoeroBan__listTxt1">
-          <li class="hoeroBan__elTxt1">
-            <h3 class="sect__txt sect__title sect__title--smallF sect__txt--bigW">
-              Designer
-            </h3>
-            <p class="sect__txt">
-              UX / UI design<br />
-              Responsive/ mobile<br />
-              Web-designer
-            </p>
-
-
-          </li>
-          <li class="hoeroBan__elTxt1">
-            <h3 class="sect__txt sect__title sect__title--smallF sect__txt--bigW">
-              Develloper
-            </h3>
-            <p class="sect__txt">
-              Front-end<br />
-              Web-app
-
-            </p>
-
-
-          </li>
-        </ul>
+       
+        <SmallColInfoVue :WithLink="true"/>
 
         <div class="hoeroBan__boxDec1">
           <IconRoundStar />
         </div>
       </div>
 
-      <div id="projets">
-        jesuis projet
-      </div>
+      
 
     </div>
 
     <InterBoxTitleVue />
+    <SmallColInfoVue :WithLink="false"/>
   </main>
 </template>
 

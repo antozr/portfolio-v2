@@ -3,7 +3,7 @@
 import IconBoxStar from '../components/icons/IconBoxStar.vue';
 </script>
 <template>
-    <div class="sect__interTitreBox">
+    <div class="sect__interTitreBox" id="projets">
       <div class="interBox__mainB">
         <div class="interBox__boxDeco">
           <IconBoxStar></IconBoxStar>

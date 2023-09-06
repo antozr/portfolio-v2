@@ -18,10 +18,7 @@ function showMenu() {
     <div class="col"></div>
     <div class="col"></div>
     <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
+    
 
 
   </div>
@@ -206,7 +203,7 @@ function showMenu() {
         column-gap: 2vw;
         opacity: 1;
         z-index: 30;
-        transform: translateY(51px);
+        transform: translateY(50px);
         width: 60%;
         background: #fff;
         border-radius: 0 0 8px 8px;
