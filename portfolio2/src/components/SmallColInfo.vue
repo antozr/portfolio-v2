@@ -9,7 +9,7 @@ const props = defineProps({
   title2: String
 });
 
-let allLinkProject = [{name: 'TFE',actif:true}, {name: 'Archeo', actif: false}, {name:'Frontmentor', actif: false}];
+let allLinkProject = [{name: 'TFE',actif:true}, {name: 'Archeo', actif: false}, {name:'CMG', actif: false}];
 
 
 </script>

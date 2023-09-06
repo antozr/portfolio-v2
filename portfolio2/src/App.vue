@@ -18,10 +18,7 @@ function showMenu() {
     <div class="col"></div>
     <div class="col"></div>
     <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
+ 
     
 
 
