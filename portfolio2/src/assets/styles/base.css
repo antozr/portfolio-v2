@@ -12,6 +12,10 @@
   font-family: "Neue-ut";
   src: url(../../assets/fonts/NeueMachina-Ultrabold.otf);
 }
+@font-face {
+  font-family: "Neue-lt";
+  src: url(../../assets/fonts/NeueMachina-Light.otf);
+}
 
 :root {
   --color-white: #ffffff;

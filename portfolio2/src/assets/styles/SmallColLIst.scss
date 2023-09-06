@@ -1,11 +1,118 @@
+.sect {
+  &__boxSmallLLink {
+    width: 100%;
+    min-height: 105px;
+    border-radius: 0px 0px 8px 8px;
+    background: #ffdba1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 2vw 2vh;
+    row-gap: 20%;
+  }
+}
 
+.boxSLLink {
+  &__boxNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 2vw;
+  }
+  &__list {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 4vw;
+    row-gap: 2vh;
+    justify-content: flex-start;
+  }
+  &__linkBtn {
+    width: 30%;
+    padding: 6px 3px;
+    border: 1px solid #1d1d1d;
+    background: transparent;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 30px;
+  }
+  &__el{
+    color: #000;
+font-size: 28px;
+line-height: normal;
+padding: 12px 8px;
+transition: 0.6s;
+opacity: 0.6;
+font-family: "Neue-lt";
 
-.sect{
+&--actif{
+    font-weight: 800;
+      font-family: "Neue-ut";
+      transition: 0.3s;
+      opacity: 1;
+      transform: translateX(12px);
+}
+  }
+}
 
-    &__boxSmallLLink{
-        width: 100%;
-        min-height: 85px;
-        border-radius: 0px 0px 8px 8px;
-background: #FFDBA1;
+@media (min-width: 900px) {
+  .sect {
+    &__boxSmallLLink {
+      width: calc((100% / 6));
+      height: 60vh;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 18px;
+      row-gap: 8%;
     }
+  }
+
+  .boxSLLink {
+    &__boxNav {
+      flex-direction: column;
+      justify-content: space-between;
+
+      padding: 0 0 0 0vw;
+    }
+    &__list {
+      width: 100%;
+      flex-direction: column;
+      row-gap: 0.5vh;
+    }
+    &__linkBtn {
+      width: 100%;
+      padding: 12px 10px;
+      border: 1px solid #1d1d1d;
+      background: #FDF8E9;
+      transition: 0.3s;
+      text-align: center;
+      border-radius: 10px;
+      transform: translateY(7vh);
+    }
+    &__el{
+    font-size: 28px;
+    padding: 6px 8px;
+    
+      }
+
+      &__boxDec1{
+        border-radius: 14px 0px;
+border-right: 1px solid #000;
+border-bottom: 2px solid #000;
+width: 80%;
+transform: translateX(1.5vw) translateY(8.5vh);
+position: relative;
+&>svg{
+    position: relative;
+    transform: translateX(-85%) translateY(3.5vh);
+    
+    &>path{
+        fill: #000;
+    }
+}
+      }
+  }
 }
