@@ -26,7 +26,7 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
           </p>
 
         </div>
-        <BoxTitleHome :title1="'Antoni aka'" :title2="'anto__dev'" />
+        
       </div>
 
       <div class="hoeroBan__secondB">
@@ -110,6 +110,11 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
   &__project {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    min-height: 40vh;
+    background: #FDF8E9;
+    margin: 0 0 0 -3.4vw;
+    
 
   }
 
@@ -126,9 +131,11 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
 
     &__project {
       flex-direction: row;
-      height: 90vh;
+      width:99.5vw;
+      height: 100vh;
       border: 2px solid greenyellow;
-
+      margin: 0 0 0 -1.5vw;
+      padding: 5vh 0;
     }
 
   }

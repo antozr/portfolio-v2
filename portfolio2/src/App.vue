@@ -133,7 +133,7 @@ function showMenu() {
 
   &>div {
     background: red;
-    opacity: 0.3;
+    opacity: 0.4;
     height: 100%;
     width: calc((100% / 8) - 11px);
   }
