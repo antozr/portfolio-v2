@@ -88,6 +88,15 @@
             font-size: 2vw;
             
           }
+
+          &--small{
+
+            padding: 0 0 0vh 5vw ;
+            &>h2{
+              font-size: 8.5vw;
+              line-height: normal;
+            }
+          }
       
         }
     }

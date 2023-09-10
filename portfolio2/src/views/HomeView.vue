@@ -26,7 +26,7 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
           </p>
 
         </div>
-        
+        <BoxTitleHome :title1="'Antoni aka'" :title2="'anto__dev'" />
       </div>
 
       <div class="hoeroBan__secondB">
@@ -44,7 +44,7 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
 
 
     </div>
-    <InterBoxTitleVue />
+    <InterBoxTitleVue :title1="'Des Projets'" :withText="true" :WithLink="false"/>
     <div class="sect__project">
 
       <SmallColInfoVue :WithLink="false" />
@@ -90,6 +90,7 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
         </a>
       </div>
     </div>
+    <InterBoxTitleVue :withText="false" :WithLink="true" :title1="'Un CV,'"/>
   </main>
 </template>
 
@@ -132,10 +133,10 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
     &__project {
       flex-direction: row;
       width:99.5vw;
-      height: 100vh;
+      height: 105vh;
       border: 2px solid greenyellow;
       margin: 0 0 0 -1.5vw;
-      padding: 5vh 0;
+      padding: 5vh 0 10vh;
     }
 
   }
