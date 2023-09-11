@@ -2,9 +2,9 @@
 import BoxTitleHome from '../components/BoxTitleHome.vue';
 import IconStarWhite1 from '../components/icons/IconStarWhite1.vue';
 import IconRoundStar from '../components/icons/IconRoundStar1.vue';
-import IconBoxStar from '../components/icons/IconBoxStar.vue';
 import InterBoxTitleVue from '../components/InterBoxTitleVue.vue';
 import SmallColInfoVue from '../components/SmallColInfo.vue';
+import ProjectGlobalVue from '../components/ProjectGlobalVue.vue';
 </script>
 
 <template>
@@ -44,53 +44,18 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
 
 
     </div>
-    <InterBoxTitleVue :title1="'Des Projets'" :withText="true" :WithLink="false"/>
-    <div class="sect__project">
+    <InterBoxTitleVue :title1="'Des Projets'" :withText="true" :WithLink="false" :id-tag="'projets'"/>
+    <ProjectGlobalVue/>
+   
+    <InterBoxTitleVue :withText="false" :WithLink="true" :title1="'Un CV,'" :idTag="'about'" :colorBG="'sect__interTitreBox--white'"/>
+<div class="sect__about">
+  <div class="sect__topAbout">
 
-      <SmallColInfoVue :WithLink="false" />
-      <div class="sect__projetBoxImg">
-        <div class="projetBI__containtImg">
-          <div class="projetBI__imgBox">
-            <img
-              src="https://images.unsplash.com/photo-1692936002249-2f0c5e2390c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-              alt="This is in screenshot of my project." class="projetBI__img" loading="lazy">
-          </div>
-        </div>
-
-        <div class="projetBI__boxTitleI">
-          <h2 class="sect__title--kuga sect__title sect__title--2">
-            TFE : TattooExplore
-          </h2>
-          <ul class="projetBI__listTagT">
-            <li class="projetBI__elTag sect__txt">
-              Scolaire
-            </li>
-            <li class="projetBI__elTag sect__txt">
-              2023
-            </li>
-          </ul>
-        </div>
-
-      </div>
-      <div class="sect__projectDes">
-        <div class="projectDes__boxT">
-          <p class="sect__txt sect__txt--bigW">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis dolores pariatur labore quia numquam
-            ipsa. Ullam ab magni in?
-          </p>
-          <br/>
-          <p class="sect__txt">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quam numquam eum voluptatem explicabo? Velit
-            reprehenderit perferendis iure ut blanditiis ullam, adipisci repellat! Magnam eos beatae tempore rerum ipsa,
-            autem voluptate veniam, assumenda ut et totam, sapiente rem repellat possimus.
-          </p>
-        </div>
-        <a href="#" class="projectDes__link">
-          Voir le projet
-        </a>
-      </div>
-    </div>
-    <InterBoxTitleVue :withText="false" :WithLink="true" :title1="'Un CV,'"/>
+  </div>
+  <div class="sect__botAbout">
+    <BoxTitleHome :title1="'Des infos'" :title2="'en vrac'" :BigClass="'titleBBox__titleB--big'"/>
+  </div>
+</div>
   </main>
 </template>
 

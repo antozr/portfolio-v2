@@ -2,13 +2,14 @@
 import IconArrowMul1Vue from './icons/IconArrowMul1.vue';
 
 const props = defineProps({
-    title1 : String,
-    title2 : String
+    title1: String,
+    title2: String,
+    BigClass: String
 })
 </script>
 
 <template>
-    <div class="sect__titleBBox">
+    <div class="sect__titleBBox" >
         <div class="titleBBox__decorBox">
             <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none"
                 class="titleBBox__svg1">
@@ -17,7 +18,7 @@ const props = defineProps({
                     fill="#F7F1E8" />
             </svg>
         </div>
-        <div class="titleBBox__titleB">
+        <div class="titleBBox__titleB" :class="BigClass">
             <h2 class="sect__title sect__title--big sect__title--white">
                 {{ title1 }}
             </h2>
@@ -47,6 +48,8 @@ const props = defineProps({
         padding: 3vh 5vw;
         background: url(../assets/images/texture1.jpg), lightgray 50% / cover no-repeat, url(../assets/images/texture2.jpg), lightgray 50% / cover no-repeat, #1D1D1D;
         position: relative;
+
+
     }
 
 
@@ -103,7 +106,7 @@ const props = defineProps({
             padding: 3vh 2vw;
             overflow: hidden;
 
-            
+
         }
     }
 
@@ -128,20 +131,24 @@ const props = defineProps({
         }
 
         &__svgD2 {
-display: none;
+            display: none;
 
         }
 
         &__titleB {
-//             border: 2px solid yellow;
-// &>h2,h3{
-//     border: 2px solid green;
-// }
-            transform: translateY(-22vh);
-            row-gap: 3vh;
-            &>h3{
-                transform: translateX(10vw);
-            }
+            //             border: 2px solid yellow;
+            // &>h2,h3{
+            //     border: 2px solid green;
+              &--big{
+            padding: 0 5vw;}
+        
+
+        transform: translateY(-22vh);
+        row-gap: 3vh;
+
+        &>h3 {
+            transform: translateX(10vw);
         }
     }
+}
 }</style>
