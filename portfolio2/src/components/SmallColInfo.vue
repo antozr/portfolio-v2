@@ -6,10 +6,13 @@ import IconRoundStar from '../components/icons/IconRoundStar1.vue';
 
 const props = defineProps({
   WithLink: Boolean,
-  title2: String
+  title2: String,
+  dataLink: String,
+  WithBtn: Boolean
 });
 
 let allLinkProject = [{name: 'TFE',actif:true}, {name: 'Archeo', actif: false}, {name:'CMG', actif: false}];
+let allLinkAbout = [{name: 'Design',actif:true}, {name: 'Frontend', actif: false}, {name:'Logiciel?', actif: false},{name:'+ sur moi', actif: false}];
 
 
 </script>
@@ -47,7 +50,13 @@ let allLinkProject = [{name: 'TFE',actif:true}, {name: 'Archeo', actif: false}, 
     <IconLongBoxStar />
     <div class="boxSLLink__boxNav">
       <ul class="boxSLLink__list">
-        <li class="boxSLLink__el" v-for="item in allLinkProject" v-bind="key">
+        <li class="boxSLLink__el" v-for="item in allLinkProject" v-bind="key" v-show="dataLink === 'nameProject'" >
+          
+          <p  :class="[item.actif ? ' boxSLLink__el--actif ' : '']">
+            {{ item.name}}
+          </p>
+        </li>
+        <li class="boxSLLink__el" v-for="item in allLinkAbout" v-bind="key" v-show="dataLink === 'nameAbout'" >
           
           <p  :class="[item.actif ? ' boxSLLink__el--actif ' : '']">
             {{ item.name}}
@@ -55,7 +64,7 @@ let allLinkProject = [{name: 'TFE',actif:true}, {name: 'Archeo', actif: false}, 
         </li>
       </ul>
 
-      <RouterLink to="/projets" class="boxSLLink__linkBtn">
+      <RouterLink to="/projets" class="boxSLLink__linkBtn" v-show="WithBtn">
 
         Tous voir
       </RouterLink>

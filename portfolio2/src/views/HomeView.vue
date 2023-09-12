@@ -50,7 +50,50 @@ import ProjectGlobalVue from '../components/ProjectGlobalVue.vue';
     <InterBoxTitleVue :withText="false" :WithLink="true" :title1="'Un CV,'" :idTag="'about'" :colorBG="'sect__interTitreBox--white'"/>
 <div class="sect__about">
   <div class="sect__topAbout">
+<SmallColInfoVue :dataLink="'nameAbout'" :WithBtn="false"/>
+<div class="topAbout__mainCont">
+  <ul class="topAbout__listFirst">
+    <li class="topAbout__elFirst">
+      <h3 class="sect__title  sect__txt--bigW">
+        Conception d'interfaces
+      </h3>
+      <ul class="topAbout__listItem">
+        <li class="topAbout__elI">
+         -  je suis
+        </li>
+        <li class="topAbout__elI">
+          je suis
+        </li>
+        <li class="topAbout__elI">
+          je suis
+        </li>
+        <li class="topAbout__elI">
+          je suis
+        </li>
+      </ul>
+    </li>
 
+    <li class="topAbout__elFirst">
+      <h3 class="sect__title  sect__txt--bigW">
+        Conception d'interfaces
+      </h3>
+      <ul class="topAbout__listItem">
+        <li class="topAbout__elI">
+         -  je suis
+        </li>
+        <li class="topAbout__elI">
+          je suis
+        </li>
+        <li class="topAbout__elI">
+          je suis
+        </li>
+        <li class="topAbout__elI">
+          je suis
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
   </div>
   <div class="sect__botAbout">
     <BoxTitleHome :title1="'Des infos'" :title2="'en vrac'" :BigClass="'titleBBox__titleB--big'"/>

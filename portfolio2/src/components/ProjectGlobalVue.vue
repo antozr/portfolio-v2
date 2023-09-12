@@ -5,7 +5,7 @@ import SmallColInfoVue from '../components/SmallColInfo.vue';
 <template>
     <div class="sect__project">
 
-        <SmallColInfoVue :WithLink="false" />
+        <SmallColInfoVue :WithLink="false" :dataLink="'nameProject'" :WithBtn="true"/>
         <div class="sect__projetBoxImg">
             <div class="projetBI__containtImg">
                 <div class="projetBI__imgBox">
