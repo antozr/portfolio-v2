@@ -48,7 +48,8 @@ import ABoutSectionVue from '../components/AboutSectionVue.vue';
     <InterBoxTitleVue :title1="'Des Projets'" :withText="true" :WithLink="false" :id-tag="'projets'"/>
     <ProjectGlobalVue/>
    
-    <InterBoxTitleVue :withText="false" :WithLink="true" :title1="'Un CV,'" :idTag="'about'" :colorBG="'sect__interTitreBox--white'"/>
+    <InterBoxTitleVue :withText="false" :WithLink="true" :title1="'Un CV,'" :idTag="'+infos'" :colorBG="'sect__interTitreBox--white'"/>
+    <div id="infos"></div>
 <ABoutSectionVue />
   </main>
 </template>

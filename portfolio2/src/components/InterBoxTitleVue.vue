@@ -12,7 +12,7 @@ const props = defineProps({
 
 </script>
 <template>
-    <div class="sect__interTitreBox" :id="idTag" :class="colorBG">
+    <div class="sect__interTitreBox" :id="idTag" :class="colorBG" ref="{{idTag}}">
       <div class="interBox__mainB">
         <div class="interBox__boxDeco">
           <IconBoxStar></IconBoxStar>

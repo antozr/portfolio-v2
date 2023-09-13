@@ -7,7 +7,11 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      hash: [
+        '#projets',
+        '#+infos'
+      ]
     },
     {
       path: '/projets',
@@ -17,7 +21,8 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/ProjetsAllView.vue')
     }
-  ]
+  ],
+  
 })
 
 export default router

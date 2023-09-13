@@ -6,6 +6,29 @@ import IconMail1 from './components/icons/IconMail1.vue';
 function showMenu() {
   console.log('hellop');
 }
+function scrollToAnchorPoint(refName, itemELLink) {
+  let allHeadLink = document.querySelectorAll('.head__link');
+  allHeadLink.forEach((el) => {
+    el.classList.remove("head__link--actif")
+  });
+  
+  if (refName === '/') {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  } else {
+    let el = document.querySelector(refName)
+
+    el.scrollIntoView({ behavior: 'smooth' })
+  }
+  allHeadLink[itemELLink].classList.add('head__link--actif')
+  // if(this.classList.contain == "head__link"){
+  //   e.target.classList.add('head__link--actif')
+  // }
+  
+}
 </script>
 
 <template>
@@ -22,8 +45,8 @@ function showMenu() {
     <div class="col"></div>
     <div class="col"></div>
     <div class="col"></div>
- 
-    
+
+
 
 
   </div>
@@ -38,11 +61,11 @@ function showMenu() {
 
 
     <nav class="head__nav">
-      <RouterLink to="/" class="head__link head__link--actif">Home</RouterLink>
+      <RouterLink to="/" @click="scrollToAnchorPoint('/',0)" class="head__link head__link--actif">Home</RouterLink>
       <RouterLink to="/projets" class="head__link">About</RouterLink>
-      <a href="#projets" class="head__link">Mon&nbsp;travail</a>
-      <a href="#+infos" class="head__link">+&nbsp;D'infos</a>
-      <a href="#contact" class="head__link">Contact</a>
+      <a @click="scrollToAnchorPoint('#projets',2)" class="head__link">Mon&nbsp;travail</a>
+      <a @click="scrollToAnchorPoint('#infos',3)" class="head__link">+&nbsp;D'infos</a>
+      <a @click="scrollToAnchorPoint('#contact',4)" class="head__link">Contact</a>
     </nav>
     <button class="head__btn" @click="showMenu">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="24" viewBox="0 0 44 24" fill="none">
@@ -107,11 +130,12 @@ function showMenu() {
     display:
       none;
   }
-  &__link{
 
-    &--actif{
+  &__link {
+
+    &--actif {
       color: var(--mauve, #9D77BF);
-      
+
       font-family: "Neue-ut";
     }
   }
@@ -195,45 +219,46 @@ function showMenu() {
 
       }
 
-     
+
 
     }
+
     &__nav {
-        height: 38px;
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        column-gap: 2vw;
-        opacity: 1;
-        z-index: 30;
-        transform: translateY(50px);
-        width: 60%;
-        background: #fff;
-        border-radius: 0 0 8px 8px;
-        // border: 2px solid red;
+      height: 38px;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      column-gap: 2vw;
+      opacity: 1;
+      z-index: 30;
+      transform: translateY(50px);
+      width: 60%;
+      background: #fff;
+      border-radius: 0 0 8px 8px;
+      // border: 2px solid red;
 
-      }
-
-      &__link {
-        color: #000;
-        font-family: "neue-reg";
-        font-size: 18px;
-        font-weight: 400;
-
-        &:hover{
-          color: var(--mauve, #9D77BF);
-          font-weight: 800;
-          
-        }
-        &--actif{
-      color:  #9D77BF;
-      
-      font-family: "Neue-ut";
     }
+
+    &__link {
+      color: #000;
+      font-family: "neue-reg";
+      font-size: 18px;
+      font-weight: 400;
+
+      &:hover {
+        color: var(--mauve, #9D77BF);
+        font-weight: 800;
+
       }
+
+      &--actif {
+        color: #9D77BF;
+
+        font-family: "Neue-ut";
+      }
+    }
   }
 
-}
-</style>
+}</style>
