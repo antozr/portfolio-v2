@@ -8,13 +8,22 @@ const props = defineProps({
   WithLink: Boolean,
   title2: String,
   dataLink: String,
-  WithBtn: Boolean
+  WithBtn: Boolean,
+  bgColor: String
 });
 
 let allLinkProject = [{name: 'TFE',actif:true}, {name: 'Archeo', actif: false}, {name:'CMG', actif: false}];
 let allLinkAbout = [{name: 'Design',actif:true}, {name: 'Frontend', actif: false}, {name:'Logiciel?', actif: false},{name:'+ sur moi', actif: false}];
 
-
+function addItemAbout(e){
+  
+  if(e.target.innerText === "Design"){
+    localStorage.setItem('itemAbout',1)
+  }else{
+    localStorage.setItem('itemAbout',0)
+  }
+  
+}
 </script>
 
 
@@ -46,7 +55,7 @@ let allLinkAbout = [{name: 'Design',actif:true}, {name: 'Frontend', actif: false
     </li>
   </ul>
 
-  <div class="sect__boxSmallLLink" v-show="WithLink == false">
+  <div class="sect__boxSmallLLink" v-show="WithLink == false" :style="bgColor">
     <IconLongBoxStar />
     <div class="boxSLLink__boxNav">
       <ul class="boxSLLink__list">
@@ -56,7 +65,7 @@ let allLinkAbout = [{name: 'Design',actif:true}, {name: 'Frontend', actif: false
             {{ item.name}}
           </p>
         </li>
-        <li class="boxSLLink__el" v-for="item in allLinkAbout" v-bind="key" v-show="dataLink === 'nameAbout'" >
+        <li class="boxSLLink__el" v-for="item in allLinkAbout" v-bind="key" v-show="dataLink === 'nameAbout'" v-on:click="addItemAbout">
           
           <p  :class="[item.actif ? ' boxSLLink__el--actif ' : '']">
             {{ item.name}}
