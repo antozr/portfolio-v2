@@ -6,6 +6,7 @@ import InterBoxTitleVue from '../components/InterBoxTitleVue.vue';
 import SmallColInfoVue from '../components/SmallColInfo.vue';
 import ProjectGlobalVue from '../components/ProjectGlobalVue.vue';
 import ABoutSectionVue from '../components/AboutSectionVue.vue';
+import ContactSection from '../components/ContactSectionVue.vue';
 </script>
 
 <template>
@@ -45,12 +46,14 @@ import ABoutSectionVue from '../components/AboutSectionVue.vue';
 
 
     </div>
-    <InterBoxTitleVue :title1="'Des Projets'" :withText="true" :WithLink="false" :id-tag="'projets'"/>
+    <InterBoxTitleVue :title1="'Des Projets'" :title2="'Scolaires -/- personnelles -/- des défis -/- & bien d’autres'" :withText="true" :WithLink="false" :id-tag="'projets'"/>
     <ProjectGlobalVue/>
    
     <InterBoxTitleVue :withText="false" :WithLink="true" :title1="'Un CV,'" :idTag="'+infos'" :colorBG="'sect__interTitreBox--white'"/>
     <div id="infos"></div>
 <ABoutSectionVue />
+<InterBoxTitleVue :with-text="true" :-with-link="false" :title1="'Un contact'" :id-tag="'contact'" :colorBG="'sect__interTitreBox--posHaute'" />
+<ContactSection />
   </main>
 </template>
 

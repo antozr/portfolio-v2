@@ -5,6 +5,7 @@ import IconBoxStar from '../components/icons/IconBoxStar.vue';
 const props = defineProps({
   WithLink: Boolean,
   title1: String,
+  title2: String,
   withText: Boolean,
   idTag: String,
   colorBG: String
@@ -24,7 +25,7 @@ const props = defineProps({
           <a href="#" v-show="WithLink" download class="interBox__link">check moi</a>
         </h2>
         <p class="sect__txt sect__txt--thin" v-show="withText">
-          Scolaires -/- personnelles -/- des défis -/- & bien d’autres
+          {{ title2 }}
         </p>
         </div>
         <div class="interBox__boxDeco interBox__boxDeco--end">
