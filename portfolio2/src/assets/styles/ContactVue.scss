@@ -27,7 +27,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 18px;
-        margin: 16px 0 0 20px;
+        margin: 25% 0 0 20px;
          
     }
     &__elLink{
@@ -60,6 +60,23 @@
         font-size: 10dvw;
        }
     }
+    &__decorB{
+        width: 85%;
+        height: 40%;
+        position: absolute;
+        z-index: 0;
+        border-radius: 30px 30px 0px 0px;
+border-top: 2px solid #000;
+border-right: 2px solid #000;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+padding: 15px;
+&>svg>path{
+    fill: #000;
+}
+
+    }
 }
 
 
@@ -69,6 +86,22 @@
 
         &__contactBox{
             flex-direction: row;
+        }
+    }
+    .contactBox{
+        &__left{
+            width: 40%;
+            height: 50vh;
+            position: relative;
+            z-index: 2;
+        }
+        &__rightBox{
+            width: calc(60% + 20px);
+        
+            margin: 0 0 0 -20px;
+           &>p{
+            font-size: 4dvw;
+           }
         }
     }
 }

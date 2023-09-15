@@ -2,6 +2,7 @@
 import IconEmail from './icons/IconMail1.vue';
 import IconIN from './icons/IconLinkdin.vue';
 import IconGithub from './icons/IconGithub.vue';
+import IconBoxStar from './icons/IconRoundStar1.vue';
 
 
 
@@ -26,6 +27,9 @@ let allLink = [
 <template>
     <section class="sect__contactBox">
         <div class="contactBox__left">
+            <div class="contactBox__decorB">
+          <IconBoxStar></IconBoxStar>
+        </div>
             <ul class="contactBox__linkList">
                 <li class="contactBox__elLink" v-for="(item, index) in allLink" :key="index">
                     <IconEmail v-show="item.icon == 0" class="contactBox__elSvg"/>
