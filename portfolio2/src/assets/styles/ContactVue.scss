@@ -86,18 +86,19 @@ padding: 15px;
 
         &__contactBox{
             flex-direction: row;
+            min-height: 30vh;
         }
     }
     .contactBox{
         &__left{
             width: 40%;
-            height: 50vh;
+            height: 40vh;
             position: relative;
             z-index: 2;
         }
         &__rightBox{
             width: calc(60% + 20px);
-        
+        height: 40vh;
             margin: 0 0 0 -20px;
            &>p{
             font-size: 4dvw;

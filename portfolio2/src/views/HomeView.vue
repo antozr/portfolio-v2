@@ -65,9 +65,10 @@ import ContactSection from '../components/ContactSectionVue.vue';
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 21px;
-    border: 2px solid red;
+    //border: 2px solid red;
     width: 100%;
     // background: blue;
+    padding: 0 3.4vw;
 
   }
 
@@ -90,16 +91,16 @@ import ContactSection from '../components/ContactSectionVue.vue';
     &__hoeroBan {
 
       flex-wrap: nowrap;
-
+      padding: 0 1.5vw;
     }
 
     &__project {
       flex-direction: row;
-      width:99.5vw;
+      width:calc(100% + 1.5vw);
       height: 105vh;
-      border: 2px solid greenyellow;
+      //border: 2px solid greenyellow;
       margin: 0 0 0 -1.5vw;
-      padding: 5vh 0 10vh;
+      padding: 5vh 1.5vw 10vh 3.5vw;
     }
 
   }

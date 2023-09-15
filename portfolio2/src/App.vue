@@ -32,24 +32,7 @@ function scrollToAnchorPoint(refName, itemELLink) {
 </script>
 
 <template>
-  <div class="rowGrid">
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
 
-
-
-
-  </div>
   <header class="head">
     <div class="head__logoBox">
       <RouterLink to="/" class="head__logo">

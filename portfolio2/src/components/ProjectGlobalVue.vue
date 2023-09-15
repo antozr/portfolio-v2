@@ -1,5 +1,6 @@
 <script setup>
 import SmallColInfoVue from '../components/SmallColInfo.vue';
+
 </script>
 
 <template>
