@@ -78,7 +78,7 @@ import ContactSection from '../components/ContactSectionVue.vue';
     width: 100vw;
     min-height: 40vh;
     background: #FDF8E9;
-    margin: 0 0 0 -3.4vw;
+    margin: 0 ;
     
 
   }
@@ -97,10 +97,10 @@ import ContactSection from '../components/ContactSectionVue.vue';
     &__project {
       flex-direction: row;
       width:calc(100% + 1.5vw);
-      height: 105vh;
+      height: 130vh;
       //border: 2px solid greenyellow;
       margin: 0 0 0 -1.5vw;
-      padding: 5vh 1.5vw 10vh 3.5vw;
+      padding: 10vh 1.5vw 15vh 3.5vw;
     }
 
   }

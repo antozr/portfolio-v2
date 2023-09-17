@@ -81,6 +81,7 @@ function scrollToAnchorPoint(refName, itemELLink) {
   justify-content: space-between;
   align-items: center;
   border: 2px solid red;
+  z-index: 40;
 
   &__logoBox {
     display: flex;
