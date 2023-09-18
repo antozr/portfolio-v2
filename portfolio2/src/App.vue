@@ -80,14 +80,16 @@ function scrollToAnchorPoint(refName, itemELLink) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
+  //border: 2px solid red;
   z-index: 40;
 
   &__logoBox {
     display: flex;
     height: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   &__logo {
@@ -98,6 +100,7 @@ function scrollToAnchorPoint(refName, itemELLink) {
   }
 
   &__nav {
+    display: none;
     opacity: 0;
     z-index: -1;
     position: relative;
@@ -108,6 +111,7 @@ function scrollToAnchorPoint(refName, itemELLink) {
     width: 44px;
     background: transparent;
     border: none;
+    display: none;
   }
 
   &__btnMail {
@@ -173,7 +177,10 @@ function scrollToAnchorPoint(refName, itemELLink) {
     border: none;
     border-bottom: 2px solid #1d1d1d;
 
-
+    &__logoBox {
+    width: auto;
+    align-items: flex-start;
+  }
     &__btn {
       display: none;
     }
