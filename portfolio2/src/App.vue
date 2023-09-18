@@ -45,7 +45,7 @@ function scrollToAnchorPoint(refName, itemELLink) {
 
     <nav class="head__nav">
       <RouterLink to="/" @click="scrollToAnchorPoint('/',0)" class="head__link head__link--actif">Home</RouterLink>
-      <RouterLink to="/projets" class="head__link">About</RouterLink>
+  <!-- {# <RouterLink to="/projets" class="head__link">About</RouterLink> #} -->
       <a @click="scrollToAnchorPoint('#projets',2)" class="head__link">Mon&nbsp;travail</a>
       <a @click="scrollToAnchorPoint('#infos',3)" class="head__link">+&nbsp;D'infos</a>
       <a @click="scrollToAnchorPoint('#contact',4)" class="head__link">Contact</a>
@@ -58,10 +58,10 @@ function scrollToAnchorPoint(refName, itemELLink) {
         <rect y="20" width="44" height="4" rx="2" fill="#933FFF" />
       </svg>
     </button>
-    <button class="head__btnMail">
+    <a href="mailto:antonidwm@gmail.com" class="head__btnMail">
       Contact-moi
       <IconMail1 />
-    </button>
+    </a>
   </header>
 
   <RouterView />
@@ -117,6 +117,7 @@ function scrollToAnchorPoint(refName, itemELLink) {
   &__btnMail {
     display:
       none;
+      color: #1d1d1d;
   }
 
   &__link {

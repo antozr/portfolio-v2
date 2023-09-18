@@ -39,12 +39,35 @@
        
     }
     &__link{
+        display: flex;
+        flex-direction: row;
+        column-gap: 19px;
+        align-items: center;
+        justify-content: flex-start;
         color: #000;
+        transition: 0.3s;
+
+        &:hover{
+            transition: 0.3s;
+            transform: translateX(20px);
+            color: #933FFF;
+            &>svg{
+                transition: 0.3s;
+                transform: translateX(10px);
+                opacity: 0.5;
+                &>path{
+                    
+                    // fill: #933FFF;
+                    // path:#933FFF;
+                }
+            }
+        }
     }
     &__elSvg{
         width: 24px;
         height: 24px;
         object-fit: cover;
+        transition: 0.3s;
     }
 
     &__rightBox{
