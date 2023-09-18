@@ -73,7 +73,7 @@ let arrayAbout = [
   }]
 
 const itemData = ref(0)
-console.log(itemData.value);
+//console.log(itemData.value);
 function updateItemList(e) {
   if (e.target.innerText === allLinkAbout[0].name) {
     itemData.value = 0
