@@ -4,12 +4,13 @@ import IconArrowMul1Vue from './icons/IconArrowMul1.vue';
 const props = defineProps({
     title1: String,
     title2: String,
-    BigClass: String
+    BigClass: String,
+    BGImga:String
 })
 </script>
 
 <template>
-    <div class="sect__titleBBox" >
+    <div class="sect__titleBBox" :style="BGImga" >
         <div class="titleBBox__decorBox">
             <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none"
                 class="titleBBox__svg1">
@@ -44,9 +45,10 @@ const props = defineProps({
         width: 100%;
         height: 80vh;
         border-radius: 50px 50px 0px 0px;
-        background: #1D1D1D;
+        //background: #1D1D1D;
         padding: 3vh 5vw;
-        background: url(../assets/images/texture1.jpg), lightgray 50% / cover no-repeat, url(../assets/images/texture2.jpg), lightgray 50% / cover no-repeat, #1D1D1D;
+       background-image: url(../assets/images/deco1.jpg);
+       background-size: cover;
         position: relative;
 
 
