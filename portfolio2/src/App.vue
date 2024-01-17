@@ -46,9 +46,9 @@ function scrollToAnchorPoint(refName, itemELLink) {
     <nav class="head__nav">
       <RouterLink to="/" @click="scrollToAnchorPoint('/',0)" class="head__link head__link--actif">Home</RouterLink>
   <!-- {# <RouterLink to="/projets" class="head__link">About</RouterLink> #} -->
-      <a @click="scrollToAnchorPoint('#projets',2)" class="head__link">Mon&nbsp;travail</a>
-      <a @click="scrollToAnchorPoint('#infos',3)" class="head__link">+&nbsp;D'infos</a>
-      <a @click="scrollToAnchorPoint('#contact',4)" class="head__link">Contact</a>
+      <a @click="scrollToAnchorPoint('#projets',1)" class="head__link">Mon&nbsp;travail</a>
+      <a @click="scrollToAnchorPoint('#infos',2)" class="head__link">+&nbsp;D'infos</a>
+      <a @click="scrollToAnchorPoint('#contact',3)" class="head__link">Contact</a>
     </nav>
     <button class="head__btn" @click="showMenu">
       <svg xmlns="http://www.w3.org/2000/svg" width="44" height="24" viewBox="0 0 44 24" fill="none">
