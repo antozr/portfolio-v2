@@ -56,9 +56,7 @@ console.log(cardSize);
                 
             </div>
             <div class="projetBox__listCardB">
-              <RowCard />
-              
-              <CardProjectSet /><CardProjectSet /><CardProjectSet /><CardProjectSet /><CardProjectSet /><CardProjectSet /><CardProjectSet /><CardProjectSet /><CardProjectSet />
+              <RowCard :visible2="true"/>
             </div>
     </section>
 

@@ -5,7 +5,8 @@ const props = defineProps({
  urlImg: String,
  titlePr : String,
  description: String,
- tagss: Array
+ tagss: Array,
+ smallCard : String
 })
 </script>
 
@@ -14,14 +15,14 @@ const props = defineProps({
 
 
 <template>
-  <div class="cardProjet">
+  <div class="cardProjet" :class="smallCard">
     <div class="cardProjet__imgBox">
       <img src="#" class="cardProjet__img" alt="" />
     </div>
 
     <div class="cardProjet__boxContent">
       <h2 class="cardProjet__title cardProjet__title--2">
-        Nom du projet
+        Noprojetm du {{ titlePr }} 
       </h2>
       <p class="cardProjet__txt">
         Travail de fin d’études sur la création d’un storytelling avec l’aide de react & framer.
@@ -35,7 +36,7 @@ const props = defineProps({
         <ul class="cardProjet__tagList">
           <li class="cardProjet__tag">
             <p class="cardProjet__tagTxt">
-              TAGGG
+              TAGGG {{ tagss }}
             </p>
           </li>
         </ul>
@@ -44,10 +45,14 @@ const props = defineProps({
   </div>
 </template>
 
-<style scoped >
+<style scoped lang="scss">
 .cardProjet {
   width: 467px;
   height: auto;
+  &--small{
+    width: 360px;
+    margin: 0 10px;
+  }
 
 }
 
