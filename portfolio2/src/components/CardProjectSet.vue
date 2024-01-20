@@ -47,7 +47,9 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .cardProjet {
-  width: 467px;
+  max-width: 467px;
+  width: calc(100% / 3);
+  min-width: 200px;
   height: auto;
   &--small{
     width: 360px;

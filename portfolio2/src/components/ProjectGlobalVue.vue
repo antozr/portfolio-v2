@@ -93,7 +93,7 @@ function changeStateElNav(e) {
                     </li>
                 </ul>
 
-                <RouterLink to="/projets" class="boxSLLink__linkBtn" v-show="WithBtn">
+                <RouterLink to="/projets" class="boxSLLink__linkBtn" v-show="true">
 
                     Tous voir
                 </RouterLink>
