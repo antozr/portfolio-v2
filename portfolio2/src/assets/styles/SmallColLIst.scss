@@ -8,8 +8,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 2vw 2vh;
-    row-gap: 20%;
+    padding: 16px 2vw 4vh;
+    row-gap: 16px;
     position: relative;
     z-index: 2;
   }
@@ -23,14 +23,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 0 0.5vw;
+    padding: 0 5vw;
   }
   &__list {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    column-gap: 4vw;
-    row-gap: 2vh;
+    column-gap: 8vw;
+    row-gap: 0vh;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
   &__linkBtn {
@@ -48,6 +49,7 @@
       border: none;
       font-family: "Neue-ut";
     }
+    
   }
   &__el{
     color: #000;
@@ -60,11 +62,24 @@ font-family: "Neue-lt";
 transition: 0.3s;
 cursor: pointer;
 
+//
+
+
 &:hover{
   transition: 0.3s;
   transform: translateX(12px);
   font-family: "Neue-ut";
   opacity: 1;
+}
+&--noHover{
+  cursor: auto;
+  &:hover{
+    transition: 0.3s;
+    transform: translateX(0px);
+    font-family: "Neue-lt";
+    opacity: 0.6;
+    
+  }
 }
 &--actif{
     font-weight: 800;

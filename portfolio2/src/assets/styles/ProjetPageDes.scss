@@ -1,0 +1,15 @@
+
+
+.sect{
+
+    &__descriptionProjetP{
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        z-index: 30;
+        background-color: red;
+        width: 100%;
+        min-height: 400vh;
+    }
+    
+}

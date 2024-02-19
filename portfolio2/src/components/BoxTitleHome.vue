@@ -5,7 +5,8 @@ const props = defineProps({
     title1: String,
     title2: String,
     BigClass: String,
-    BGImga:String
+    BGImga:String,
+    BigName: Boolean
 })
 </script>
 
@@ -20,7 +21,7 @@ const props = defineProps({
             </svg>
         </div>
         <div class="titleBBox__titleB" :class="BigClass">
-            <h2 class="sect__title sect__title--big sect__title--white">
+            <h2 class="sect__title sect__title--big sect__title--white" :class="[BigName ? 'sect__title--minSize':'']">
                 {{ title1 }}
             </h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="82" height="85" viewBox="0 0 82 85" fill="none"
@@ -43,13 +44,31 @@ const props = defineProps({
 .sect {
     &__titleBBox {
         width: 100%;
-        height: 80vh;
+        height: 60vh;
         border-radius: 50px 50px 0px 0px;
-        //background: #1D1D1D;
+        background: #1D1D1D;
         padding: 3vh 5vw;
-       background-image: url(../assets/images/deco1.jpg);
-       background-size: cover;
         position: relative;
+        transition: 0.4s;
+    //    background-image: url(../assets/images/deco1.jpg);
+    //    background-size: cover;
+    //     position: relative;
+
+        &::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            //background: red;
+            background-image: url(../assets/images/degradation-box-title-min.webp);
+            opacity: 0.8;
+            image-rendering: pixelated;
+            background-size: cover;
+        position: relative;
+            position: absolute;
+            top:0;
+            left: 0;
+            transition: 0.3s;
+        }
 
 
     }
@@ -77,8 +96,8 @@ const props = defineProps({
 
     &__svgD1 {
         position: absolute;
-        right: 15px;
-        top: 9vh;
+        right: 6px;
+        top: 6.5vh;
     }
 
     &__svgD2 {
@@ -92,7 +111,7 @@ const props = defineProps({
     &__titleB {
 
         transform: translateY(-7vh);
-        margin: 0 0 0 8px;
+        margin: 0 0 0 18px;
         display: flex;
         flex-direction: column;
         row-gap: 8vh;

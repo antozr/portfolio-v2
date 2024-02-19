@@ -45,12 +45,19 @@
       &--3 {
         font-size: 9dvw;
       }
+      &--small3{
+        font-size:5dvw;
+      }
 
       &--smallF{
         font-size: 18px;
       }
       &--2{
         font-size: 3.5vw;
+      }
+
+      &--minSize{
+        font-size: 10dvw;
       }
     }
   }

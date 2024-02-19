@@ -20,7 +20,12 @@ let allLink = [
         name: "Antoni Dumont",
         icon: 2
     }
-]
+];
+
+
+function goSpoti(){
+    window.open('https://open.spotify.com/playlist/5gRvtuRYpTcVNCAca8346Z?si=a3245445b6b44578', '_blank')
+}
 </script>
 
 
@@ -41,7 +46,7 @@ let allLink = [
                 </li>
             </ul>
         </div>
-        <div class="contactBox__rightBox">
+        <div class="contactBox__rightBox" @click="goSpoti()" title="Une envie de musique ? Alors click. ">
             <p class="sect__title sect__title--kuga sect__title--2">
                 A la prochaine
             </p>

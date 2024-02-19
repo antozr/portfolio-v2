@@ -7,8 +7,8 @@
 @import './projectStyleZone.scss';
 @import './ContactVue.scss';
 @import './ProjetBox.scss';
-
-
+@import './projetgraf.scss';
+@import './ProjetPageDes.scss';
 
 *{
   padding: 0;
@@ -23,7 +23,7 @@ main{
   height: auto;
   background-color: #ffffff;
   //padding: 2.5vh 3.4vw;
-  padding: 2.5vh 0;
+  padding: 2.5vh 0 0 ;
   font-family: 'Neue-reg';
   margin: 0 0 80px 0;
   overflow-x: hidden;

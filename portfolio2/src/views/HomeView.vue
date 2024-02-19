@@ -9,6 +9,18 @@ import ABoutSectionVue from '../components/AboutSectionVue.vue';
 import ContactSection from '../components/ContactSectionVue.vue';
 </script>
 
+
+<script>
+
+function scrollTop(){
+  window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+}
+
+</script>
 <template>
   <main>
     <div class="sect__hoeroBan">
@@ -19,7 +31,7 @@ import ContactSection from '../components/ContactSectionVue.vue';
           </h2>
           <p class="sect__txt">
             Bienvenus ici 👋. <br />
-            Moi c’est Antoni, <b>un designer / Front-end dev junior</b>, qui touche à tous, pour faire des expériences
+            Moi c’est Antoni, <b>un designer / Front-end dev junior</b>, qui touche à tout, pour faire des expériences
             uniques et agréables.
           </p>
           <p class="sect__txt">
@@ -46,9 +58,13 @@ import ContactSection from '../components/ContactSectionVue.vue';
 
 
     </div>
-    <InterBoxTitleVue :title1="'Des Projets'" :title2="'Scolaires -/- personnelles -/- des défis -/- & bien d’autres'" :withText="true" :WithLink="false" :id-tag="'projets'"/>
+    <InterBoxTitleVue :title1="'Des Projets'" :title2="'Scolaires -/- personnels -/- des défis -/- & bien d’autres'" :withText="true" :WithLink="false" :id-tag="'projets'"/>
     <ProjectGlobalVue/>
    
+    <router-link to="/projets" @click="scrollTop()" class="sect__linkPrBigBox">
+
+      <BoxTitleHome :title1="'Tout'+' découvrir'" :title2="'*soit curieux'"  :BigName="true"/>
+    </router-link>
     <InterBoxTitleVue :withText="false" :WithLink="true" :title1="'Un CV,'" :idTag="'+infos'" :colorBG="'sect__interTitreBox--white'"/>
     <div id="infos"></div>
 <ABoutSectionVue />
@@ -83,6 +99,40 @@ import ContactSection from '../components/ContactSectionVue.vue';
 
   }
 
+  &__linkPrBigBox{
+
+    &>.sect__titleBBox{
+        background: #933FFF;
+        &::before{
+          transition: 0.6s;
+          transform: translateY(80%) translateX(30%) scaleX(0.8) skewX(15deg);
+          background-image: url(../assets/images/poster-giulletta-spider-affiche-insta.webp);
+          object-fit: cover;
+          opacity: 0.8;
+          aspect-ratio:9 / 12;
+          width: 100%;
+          height: 60%;
+          
+        }
+    }
+    &:hover{
+      &>.sect__titleBBox{
+        background: #933FFF;
+        transition: 0.3s;
+
+        &::before{
+          transition: 0.6s;
+          //transform: translateY(30%) translateX(30%) scaleX(0.8) skewX(15deg);
+          //background-image: url(../assets/images/poster-giulletta-spider-affiche-insta.webp);
+          opacity: 0.8;
+          aspect-ratio:9 / 12;
+          width: 40%;
+          animation:moveBoxImgHover 1.8s  both;
+        }
+      }
+    }
+  }
+
 }
 
 @media(min-width:900px) {
@@ -97,13 +147,59 @@ import ContactSection from '../components/ContactSectionVue.vue';
     &__project {
       flex-direction: row;
       width:calc(100% + 1.5vw);
-      height: 130vh;
+      height: 110vh;
       //border: 2px solid greenyellow;
       margin: 0 0 0 -1.5vw;
-      padding: 10vh 1.5vw 15vh 3.5vw;
+      padding: 10vh 1.5vw 3vh 3.5vw;
     }
 
+    &__linkPrBigBox{
+      &>.sect__titleBBox{
+      background: #1d1d1d;
+        &::before{
+          transition: 0.6s;
+          transform: translateY(0%) translateX(0%) scaleX(1) skewX(0deg);
+          background-image: url(../assets/images/degradation-box-title-min.webp);
+
+          width: 100%;
+          height: 100%;
+          
+        }
+      }
+
+    }
   }
+}
+
+/* animation */
+
+@keyframes moveBoxImgHover {
+  from{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  10%{
+    scale: 0.5;
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1) scaleX(0.8) translateX(60%);
+    background-image: url(../assets/images/poster-giulletta-spider-affiche-insta.webp);
+    opacity: 0.6;
+  }
+  80%{
+    transform: scale(1)  translateY(25%) translateX(40%) scaleX(0.8) skewX(5deg);
+    opacity: 0.9;
+  }
+
+  to{
+    transform: translateY(30%) translateX(30%) scaleX(0.8) skewX(15deg);
+    background-image: url(../assets/images/poster-giulletta-spider-affiche-insta.webp);
+    opacity: 0.9;
+
+  }
+
 }
 </style>
 

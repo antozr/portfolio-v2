@@ -5,7 +5,7 @@
         min-height: 50vh;
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     &__botAbout{
         width: 100%;
@@ -23,15 +23,15 @@
         background-color: #FDF8E9;
         //border: 2px olive solid;
         position: relative;
-        z-index: 0;
-        margin: 0 0 0 -120px;
-        padding: 2vw 160px;
-        border-radius: 0 20px 0 0 ;
+        z-index: 2;
+        margin: -40px 0 0 0;
+        padding: 10vh 3vw;
+        border-radius: 20px 20px 0 0 ;
     }
 
 &__listFirst{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 3vw;
     row-gap: 3vh;
     height: 100%;
@@ -66,7 +66,7 @@
     }
 }
 
-@media(min-height:900px){
+@media(min-width:900px){
 
     .sect{
 
@@ -96,6 +96,10 @@
     flex-direction: row;
     column-gap: 2vw;
     padding: 0 0 90px 5vw;
+    row-gap: 3vh;
+    height: 100%;
+    align-items: flex-end;
+    
 }
     &__elFirst{
         width: 30%;
@@ -108,6 +112,22 @@
     &__elI{
         padding: 4px 0;
         font-size: 18px;
+    }
+}
+
+
+
+.topAbout{
+    &__mainCont{
+        width: 100%;
+        //height: 100%;
+        background-color: #FDF8E9;
+        //border: 2px olive solid;
+        position: relative;
+        z-index: 0;
+        margin: 0 0 0 -120px;
+        padding: 2vw 160px;
+        border-radius: 0 20px 0 0 ;
     }
 }
 }

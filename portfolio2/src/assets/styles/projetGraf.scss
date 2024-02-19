@@ -1,0 +1,324 @@
+.projetGraf {
+  &__section {
+    background-color: #010101;
+    width: 100%;
+    min-height: 100vh;
+    padding: 8vh 3.5vw 0; 
+    border-radius: 30px 30px 0 0 ;
+    margin: -4vh 0 0 0;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__imgBoxEl {
+    margin: 18vh 0;
+    //width: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &--reverse{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    &:hover{
+      &>div >img{
+        transition: 1.2s;
+        transform: skewx(0deg) skewy(0deg) translatey(10%);
+        scale: 0.6;
+        animation: animPoster1 0.8s both;
+      }
+    }
+  }
+  &__boxImgLeft{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+  }
+  &__imgSub {
+    //width: calc(50% - 22px);
+    width: calc(100% - 22px);
+    aspect-ratio: 9 / 12;
+    overflow: hidden;
+
+    &--reverse{
+        transform: translateX(18%);
+    }
+    &:hover{
+      &>img{
+        // transition: 0.3s;
+        // transform: skewX(0deg) skewY(0deg);
+        // scale: 0.6;
+        animation: animPoster1 0.8s both;
+        animation-delay: 0.6s;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: skewX(6deg) skewY(10deg) translateY(0%) ;
+    transition: 0.3s;
+    animation: animPoster1Reverse 0.6s both;
+animation-delay: 0.4s;
+    &--reverse{
+      transition: 1.2s;
+        transform: skewX(-10deg) skewY(-10deg)  translateY(0%);
+        animation: animPoster1Reverse 1.2s both;
+        animation-delay: 0.4s;
+    }
+  }
+  
+  &__boxTxt {
+    width: 100%;
+    max-width: 60ch;
+    padding: 4vh 0 8vh 3vw;
+    & > h3 {
+      color: #ffffff;
+      font-size: 11.5vw;
+    }
+    & > p {
+      color: #ffffff;
+      margin: 5vh 0 0 16.5vw;
+    }
+  }
+  &__txtColor{
+    color: #ffdba1;
+    opacity: 0.5;
+    font-size: 8.5dvw;
+    line-height: 75%;
+  }
+  &__boxImgRight{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../images/mockup1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+  &__seeAll{
+    width: 100%;
+    height: 24vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &__linkBox{
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+  }
+  &__boxSeeMore{
+    position: relative;
+    // height: 80%;
+    // width: 50%;
+    width: 100%;
+    height: 100%;
+   // min-width: 280px;
+    //min-height: 300px;
+    background-color: #ffdba1;
+    
+    border-radius: 30px 30px 0 0 ;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+
+    &:hover{
+        transition: 0.6s;
+        border: #ffdba1 solid 2px;
+        background-color: transparent;
+        border-bottom: 0px;
+
+        &>p{
+            color: #ffdba1;
+        }
+    }
+
+    &>p{
+        font-size: 8.2dvw;
+        font-family: "kuga";
+        padding: 38px 0 0 16px;
+    }
+  }
+  &__boxDecor{
+    width: calc(100%  - 32px);
+    height: 80%;
+    border-radius: 20px 20px 0 0;
+    border-top: 2px solid #010101;
+    border-left: 2px solid #010101;
+    padding: 16px ;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+}
+
+
+/* animation key */
+
+@keyframes animPoster1 {
+  from{
+    transform: skewX(6deg) skewY(10deg);
+    scale: 1;
+  }
+10%{
+  transform: skewX(-12deg) skewY(2deg);
+}
+40%{
+  transform: skewX(0deg) skewY(0deg);
+}
+60%{
+  transform: translateY(-20%);
+  scale: 1;
+}
+90%{
+  transform: translateY(20%);
+}
+  to{
+    transform: skewX(0deg) skewY(0deg) translateY(20%);
+    scale: 0.7;
+  }
+}
+
+@keyframes animPoster1Reverse {
+  from{
+    transform: skewX(0deg) skewY(0deg) translateY(20%);
+    scale: 0.6;
+  }
+
+40%{
+  transform: skewX(0deg) skewY(10deg);
+}
+60%{
+  transform: translateY(-20%);
+  scale: 1;
+}
+90%{
+  
+}
+  to{
+    transform: skewX(6deg) skewY(10deg) translateY(0);
+    scale: 1;
+  }
+}
+
+
+/* responsive */
+@media(min-width:900px){
+  .projetGraf{
+    &__imgBoxEl {
+      margin: 18vh 0;
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      &--reverse{
+          flex-direction: row-reverse;
+          justify-content: space-between;
+      }
+      &:hover{
+        &>div >img{
+          transition: 1.2s;
+          transform: skewx(0deg) skewy(0deg) translatey(10%);
+          scale: 0.6;
+          animation: animPoster1 0.8s both;
+        }
+      }
+    }
+
+    &__imgSub {
+      width: calc(50% - 22px);
+      aspect-ratio: 9 / 12;
+      overflow: hidden;
+  
+      &--reverse{
+          transform: translateX(18%);
+      }
+      &:hover{
+        &>img{
+
+          animation: animPoster1 0.8s both;
+          animation-delay: 0.6s;
+        }
+      }
+    }
+
+    &__boxTxt {
+      width: 50%;
+      max-width: 120ch;
+      padding: 0 0 8vh 3vw;
+      & > h3 {
+        color: #ffffff;
+        font-size: 5dvw;
+      }
+      & > p {
+        color: #ffffff;
+        margin: 5vh 0 0 16.5vw;
+      }
+    }
+
+
+    &__seeAll{
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    &__linkBox{
+      height: 80%;
+      width: 50%;
+      display: inline-block;
+    }
+    &__boxSeeMore{
+      position: relative;
+      // height: 80%;
+      // width: 50%;
+      width: 100%;
+      height: 100%;
+      min-width: 280px;
+      min-height: 300px;
+      background-color: #ffdba1;
+      
+      border-radius: 30px 30px 0 0 ;
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+  
+      &:hover{
+          transition: 0.6s;
+          border: #ffdba1 solid 2px;
+          background-color: transparent;
+          border-bottom: 0px;
+  
+          &>p{
+              color: #ffdba1;
+          }
+      }
+  
+      &>p{
+          font-size: 3.2dvw;
+          font-family: "kuga";
+      }
+    }
+    &__boxDecor{
+      width: calc(100%  - 56px);
+      height: 80%;
+      border-radius: 20px 20px 0 0;
+      border-top: 2px solid #010101;
+      border-left: 2px solid #010101;
+      padding: 30px ;
+      position: absolute;
+      top: 28px;
+      left: 28px;
+    }
+  }
+}

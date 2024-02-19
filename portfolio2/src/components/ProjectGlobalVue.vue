@@ -25,7 +25,7 @@ let allInfoProject = [
         tag1: "Event - 24h",
         tag2: "2023",
         des2: 'Le but ? Ce fut de répondre à un postulat un peu perché, mais qui peut se résumer à « qu’avons-nous fait dans le présent qui à impacter le passé et qu’on a vus dans le futur ? ». Sur la base de ce postulat, avec le groupe et la bonne ambiance de la fête, nous sommes partis à la création de ce projet, simple mais avec ces subtilités graphiques à mettre en place. J’ai alors pris le rôle d’intégrer le projet, avec un test sur react.js, pour une faciliter de faire les articles, du changement des pages mais aussi pour essayer de nouvelles méthodes pour la gestion de pages similaires mais au contenu différent. ',
-        des1: "Une aventure de 24h, avec des potes pour un projet déganté.",
+        des1: "Une aventure de 24h, avec des potes pour un projet déjanté.",
         // subLink : [{
         //     name:'Jean de Roy',
         //     link: "https://caeiinos.be/"
@@ -38,14 +38,14 @@ let allInfoProject = [
         name: "Chatterie du Monde de Gioia",
         tag1: "Client",
         tag2: "2023",
-        des1: "Un premier projet pour un client, pour une chatterie remplie de boule de poil. ",
-        des2: "Pour cette demande, ce fut assez simple, mettre en place un site pour présenter la chatterie, les chats, les chattons mais aussi donner des infos pratiques & importantes sur les conditions d’adoptions et les réglementations à accepter. Pour ce faire, j’ai analysé les différents sites de chatterie, pour en retirer le meilleur mais aussi pour faire quelque chose en accord avec les règles UI /UX. Une simplicité graphique pour mettre en valeur les chats, les photos mais aussi pour adoucir visuellement les différentes informations qu’on y retrouve. ",
+        des1: "Un premier projet pour un client, pour une chatterie remplie de boules de poils. ",
+        des2: "Pour cette demande, ce fut assez simple, mettre en place un site pour présenter la chatterie, les chats, les chatons mais aussi donner des infos pratiques & importantes sur les conditions d’adoptions et les réglementations à accepter. Pour ce faire, j’ai analysé les différents sites de chatterie, pour en retirer le meilleur mais aussi pour faire quelque chose en accord avec les règles UI /UX. Une simplicité graphique pour mettre en valeur les chats, les photos mais aussi pour adoucir visuellement les différentes informations qu’on y retrouve. ",
         link: "https://cmg-inky.vercel.app/",
         imgTag:2
     },
 ];
 
-let allImg= [tfe1,archeo1,cmg1];
+let allImg= ["https://antoni-dumont.be/projets/portfolio/img/tfe1-33b6b41b.jpg","https://antoni-dumont.be/projets/portfolio/img/archeo1-09d7be02.jpg","https://antoni-dumont.be/projets/portfolio/img/cmg1-3e8c3327.jpg"];
 
 const itemData = ref(0);
 function updateItemList(e) {
@@ -144,3 +144,24 @@ function changeStateElNav(e) {
         </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+.projectDes{
+
+    &__boxT{
+        margin: 28px 0 18px;
+    }
+}
+
+
+
+@media(min-width:900px){
+    .projectDes{
+
+&__boxT{
+    margin:  0;
+}
+}
+}
+</style>
+

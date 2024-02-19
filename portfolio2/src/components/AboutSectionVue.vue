@@ -30,6 +30,7 @@ let arrayAbout = [
       "SEO",
       "Utilisation CMS",
       "Du simple au complexe",
+      "Création d'email",
       "..."
     ], allItem2: [
       "Création d'app web",
@@ -56,7 +57,7 @@ let arrayAbout = [
     ]
   }, {
     title1: "Mes passions",
-    title2: "Des langages",
+    title2: "Mon esprits",
     allItem1: [
       "La musique & le piano",
       "L'art & les illustrations",
